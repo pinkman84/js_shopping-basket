@@ -19,8 +19,8 @@ describe( 'Shopping Basket', function() {
   })
 
   it( 'customer has loyalty card, take off 5% extra total now 59.64', function() {
-    console.log(basket.totalAmount())
-    assert.equal(59.64, basket.loyaltyCard('yes'))
+ 
+    assert.equal(59.64, basket.loyaltyCard('yes').toFixed(2))
   })
 
 

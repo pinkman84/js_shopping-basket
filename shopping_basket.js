@@ -53,13 +53,17 @@ var shoppingBasket = {
  loyaltyCard: function(confirm) {
 
     if(confirm === 'yes') {
-      var loyalty = this.totalAmount * 0.95
-      return loyalty.toFixed(2)
+      return this.totalAmount() * 0.95
+     
     }
 
  }
 
 }
+
+// console.log(shoppingBasket.totalAmount())
+
+// console.log(shoppingBasket.loyaltyCard('yes'))
 
 
 
